@@ -16,18 +16,22 @@ void	get_fork2(t_data *data, t_philo *philo)
 {
 	while (1)
 	{
+		// printf("fork2 trylock: %d\n", philo->philo_nbr);
 		pthread_mutex_lock(philo->fork2);
+		// printf("fork2 lock: %d[%d]\n", philo->philo_nbr, philo->fork_status2);
 		if (data->fork_status[philo->fork_status2] == 0)
 		{
 			data->fork_status[philo->fork_status2] = 1;
 			pthread_mutex_unlock(philo->fork2);
+			// printf("fork2 unlock: %d[%d]\n", philo->philo_nbr, philo->fork_status2);
 			break ;
 		}
-		pthread_mutex_unlock(philo->fork1);
+		pthread_mutex_unlock(philo->fork2);
+		// printf("fork2 unlock: %d\n[%d]\n", philo->philo_nbr, philo->fork_status2);
 		if (check_pulse(data, philo) == 1)
 			break ;
 	}
-	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
+	if (chech_status(data, philo) == 0 && check_pulse(data, philo) == 0)
 		printer(data, philo, FORK);
 }
 
@@ -35,18 +39,23 @@ int	get_fork(t_data *data, t_philo *philo)
 { 
 	while (1)
 	{
+		// printf("fork1 trylock: %d\n", philo->philo_nbr);
 		pthread_mutex_lock(philo->fork1);
+		// printf("fork1 lock: %d[%d]\n", philo->philo_nbr, philo->fork_status1);
 		if (data->fork_status[philo->fork_status1] == 0)
 		{
 			data->fork_status[philo->fork_status1] = 1;
 			pthread_mutex_unlock(philo->fork1);
+			// printf("fork1 unlock: %d[%d]\n", philo->philo_nbr, philo->fork_status1);
 			break ;
 		}
 		pthread_mutex_unlock(philo->fork1);
+		// printf("fork1 unlock: %d[%d]\n", philo->philo_nbr, philo->fork_status1);
+
 		if (check_pulse(data, philo) == 1)
 			break;
 	}
-	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
+	if (chech_status(data, philo) == 0 && check_pulse(data, philo) == 0)
 		printer(data, philo, FORK);
 	get_fork2(data, philo);
 	return (0);
@@ -56,7 +65,7 @@ int		to_eat(t_data *data, t_philo *philo)
 {
 	uint64_t	end;
 
-	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
+	if (chech_status(data, philo) == 0 && check_pulse(data, philo) == 0)
 			philo->last_ts = printer(data, philo, EAT);
 	else
 		return (1);
@@ -65,9 +74,12 @@ int		to_eat(t_data *data, t_philo *philo)
 	end = philo->last_ts + philo->t_eat;
 	if (philo->eat_count == philo->max_eat)
 	{
+		// printf("eaters trylock: %d\n", philo->philo_nbr);
 		pthread_mutex_lock(&data->eat);
+		// printf("eaters lock: %d\n", philo->philo_nbr);
 		data->eaters++;
 		pthread_mutex_unlock(&data->eat);
+		// printf("eaters unlock: %d\n", philo->philo_nbr);
 	}
 	while (philo->last_ts < end)
 	{
@@ -80,19 +92,25 @@ int		to_eat(t_data *data, t_philo *philo)
 
 int		put_down_fork(t_data *data, t_philo *philo)
 {
+	// printf("fork2 trylock: %d\n", philo->philo_nbr);
 	pthread_mutex_lock(philo->fork2);
+	// printf("fork2 lock: %d\n", philo->philo_nbr);
 	data->fork_status[philo->fork_status2] = 0;
 	pthread_mutex_unlock(philo->fork2);
+	// printf("fork2 unlock: %d\n", philo->philo_nbr);
+	// printf("fork1 trylock: %d\n", philo->philo_nbr);
 	pthread_mutex_lock(philo->fork1);
+	// printf("fork1 lock: %d\n", philo->philo_nbr);
 	data->fork_status[philo->fork_status1]= 0;
 	pthread_mutex_unlock(philo->fork1);
+	// printf("fork1 unlock: %d\n", philo->philo_nbr);
 	return (0);
 }
 int		to_sleep(t_data *data, t_philo *philo)
 {
 	uint64_t	end;
 	
-	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
+	if (chech_status(data, philo) == 0 && check_pulse(data, philo) == 0)
 			philo->last_ts = printer(data, philo, SLEEP);
 	else
 		return (1);
@@ -107,7 +125,7 @@ int		to_sleep(t_data *data, t_philo *philo)
 
 int		to_think(t_data *data, t_philo *philo)
 {
-	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
+	if (chech_status(data, philo) == 0 && check_pulse(data, philo) == 0)
 			philo->last_ts = printer(data, philo, THINK);
 	else
 		return (1);

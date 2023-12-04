@@ -119,7 +119,7 @@ void		fork_shifter(t_data *data);
 void		philo_generator(t_data *data);
 
 /*UTILS 2*/
-int			chech_status(t_data *data);
+int			chech_status(t_data *data, t_philo *philo);
 int			check_pulse(t_data *data, t_philo *philo);
 uint64_t	printer(t_data *data, t_philo *philo, char *state);
 

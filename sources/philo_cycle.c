@@ -19,7 +19,7 @@ void	*philo_cycle(void *phil)
 
 	philo = (t_philo *) phil;
 	data = philo->philo_data;
-	while (1)
+	while (data->flag_of_death == 0)
 	{
 		if (get_fork(data, philo) == 1)
 			break ;
