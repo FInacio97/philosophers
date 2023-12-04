@@ -28,7 +28,7 @@ void	get_fork2(t_data *data, t_philo *philo)
 			break ;
 	}
 	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
-		printf("%ld %d %s\n", time_stamp_philo(philo), philo->philo_nbr, FORK);
+		printer(data, philo, FORK);
 }
 
 int	get_fork(t_data *data, t_philo *philo)
@@ -47,7 +47,7 @@ int	get_fork(t_data *data, t_philo *philo)
 			break;
 	}
 	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
-		printf("%ld %d %s\n", time_stamp_philo(philo), philo->philo_nbr, FORK);
+		printer(data, philo, FORK);
 	get_fork2(data, philo);
 	return (0);
 }
@@ -57,16 +57,12 @@ int		to_eat(t_data *data, t_philo *philo)
 	uint64_t	end;
 
 	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
-	{
-		philo->last_ts = time_stamp_philo(philo);
-		printf("%ld %d %s\n", philo->last_ts, philo->philo_nbr, EAT);
-	}
+			philo->last_ts = printer(data, philo, EAT);
 	else
 		return (1);
-	// printf("philo nbr %d\n", philo->philo_nbr);
 	philo->time_of_death = philo->last_ts + philo->t_die;
-	end = philo->last_ts + philo->t_eat;
 	philo->eat_count++;
+	end = philo->last_ts + philo->t_eat;
 	if (philo->eat_count == philo->max_eat)
 	{
 		pthread_mutex_lock(&data->eat);
@@ -97,10 +93,7 @@ int		to_sleep(t_data *data, t_philo *philo)
 	uint64_t	end;
 	
 	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
-	{
-		philo->last_ts = time_stamp_philo(philo);
-		printf("%ld %d %s\n", philo->last_ts, philo->philo_nbr, SLEEP);
-	}
+			philo->last_ts = printer(data, philo, SLEEP);
 	else
 		return (1);
 	end = philo->last_ts + philo->t_sleep;
@@ -115,10 +108,7 @@ int		to_sleep(t_data *data, t_philo *philo)
 int		to_think(t_data *data, t_philo *philo)
 {
 	if (chech_status(data) == 0 && check_pulse(data, philo) == 0)
-	{
-		philo->last_ts = time_stamp_philo(philo);
-		printf("%ld %d %s\n", philo->last_ts, philo->philo_nbr, THINK);
-	}
+			philo->last_ts = printer(data, philo, THINK);
 	else
 		return (1);
 	return (0);

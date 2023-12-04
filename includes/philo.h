@@ -67,6 +67,7 @@ typedef struct	s_data
 	pthread_mutex_t *fork;
 	pthread_mutex_t lock;
 	pthread_mutex_t	eat;
+	pthread_mutex_t	printer;
 	int				*fork_status;
 	int				nbr_of_philo;
 	uint64_t		t_die;
@@ -105,7 +106,6 @@ int			ft_atoi(char *s);
 void		beggining_time_stamp(t_data *data);
 uint64_t	time_stamp(t_data *data);
 uint64_t	time_stamp_philo(t_philo *philo);
-void		printer(t_data *data, t_philo *philo, uint64_t	*ts, char *s);
 void		undertaker(t_data *data);
 int			finish_check(t_data *data);
 void		one_philo(t_data *data);
@@ -118,8 +118,9 @@ int			list_add_back(t_data *data, t_philo *node);
 void		fork_shifter(t_data *data);
 void		philo_generator(t_data *data);
 
-/*UTILS 3*/
+/*UTILS 2*/
 int			chech_status(t_data *data);
 int			check_pulse(t_data *data, t_philo *philo);
+uint64_t	printer(t_data *data, t_philo *philo, char *state);
 
 #endif

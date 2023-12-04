@@ -33,6 +33,10 @@ void	initializer(t_data *data)
 	{
 		printf("Trouble creating mutex\n");
 	}
+	if (pthread_mutex_init(&data->printer, NULL) == 1)
+	{
+		printf("Trouble creating mutex\n");
+	}
 }
 
 void	fork_destroyer(t_data *data)
@@ -45,6 +49,7 @@ void	fork_destroyer(t_data *data)
 	free (data->fork);
 	pthread_mutex_destroy(&data->lock);
 	pthread_mutex_destroy(&data->eat);
+	pthread_mutex_destroy(&data->printer);
 }
 
 int	ft_atoi(char *str)

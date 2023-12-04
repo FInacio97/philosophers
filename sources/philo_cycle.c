@@ -42,14 +42,12 @@ void	info_philo(t_data *data)
 {
 	t_philo *current;
 
-	// pthread_mutex_lock(&data->lock);
 	current = data->fst_philo;
 	while (current)
 	{
 		current->start_time = data->start_time;
 		current = current->next_philo;
 	}
-	// pthread_mutex_unlock(&data->lock);
 }
 
 void	philo_birth_giver(t_data *data)

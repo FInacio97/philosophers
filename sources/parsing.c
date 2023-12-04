@@ -44,7 +44,8 @@ int	fork_maker(t_data *data)
 
 int		parsing(t_data *data, int ac, char **av)
 {
-	printf("auqi\n");
+	printf("Nbr of philos: %d\n", data->nbr_of_philo);
+
 	data->nbr_of_philo = ft_atoi(av[1]);
 	if (data->nbr_of_philo < 1)
 		return (1);

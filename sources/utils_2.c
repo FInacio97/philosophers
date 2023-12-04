@@ -33,9 +33,20 @@ int	check_pulse(t_data *data, t_philo *philo)
 		// if (data->flag_of_death == 1)
 		// 	return (1);
 		data->flag_of_death = 1;
-		printf("%ld %d %s\n", philo->last_ts, philo->philo_nbr, DIE);
+		printer(data, philo, DIE);
 		pthread_mutex_unlock(&data->lock);
 		return (1);
 	}
 	return (0);
+}
+
+uint64_t	printer(t_data *data, t_philo *philo, char *state)
+{
+	uint64_t	ts;
+
+	pthread_mutex_lock(&data->printer);
+	ts = time_stamp_philo(philo);
+	printf("%ldms %d %s\n", ts, philo->philo_nbr, state);
+	pthread_mutex_unlock(&data->printer);
+	return (ts);
 }
