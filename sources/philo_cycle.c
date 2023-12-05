@@ -19,7 +19,7 @@ void	*philo_cycle(void *phil)
 
 	philo = (t_philo *) phil;
 	data = philo->philo_data;
-	while (data->flag_of_death == 0)
+	while (philo-> flag == 0)
 	{
 		if (get_fork(data, philo) == 1)
 			break ;
@@ -28,10 +28,13 @@ void	*philo_cycle(void *phil)
 			put_down_fork(data, philo);
 			break ;
 		}
-
 		put_down_fork(data, philo);
+		// if (philo->flag == 1)
+		// 	break ;
 		if (to_sleep(data, philo) == 1)
-			break;
+			break  ;
+		// if (philo->flag == 1)
+		// 	break ;
 		if (to_think(data, philo) == 1)
 			break ;
 	}
@@ -95,3 +98,31 @@ void	philo_retire(t_data *data)
 	}
 }
 
+void	eat_check(t_data *data)
+{
+	uint64_t	ts;
+	uint64_t	check_time;
+
+	ts = time_stamp(data);
+	check_time = ts + 200;
+	while (1)
+	{
+		pthread_mutex_lock(&data->eat);
+		if (data->eaters == data->nbr_of_philo)
+		{
+			pthread_mutex_lock(&data->lock);
+			data->flag_of_death = 1;
+			pthread_mutex_unlock(&data->lock);
+			pthread_mutex_unlock(&data->eat);
+			break ;	
+		}
+		pthread_mutex_unlock(&data->eat);
+		ts = time_stamp(data);
+		if (ts < check_time)
+			continue ;
+		if (chech_status(data, NULL) == 1)
+			break ;
+		else
+		check_time = ts + 200;
+	}
+}

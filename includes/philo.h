@@ -52,14 +52,7 @@ typedef struct s_philo
 	uint64_t		last_ts;
 	int				max_eat;
 	int				eat_count;
-	//time of death
-	//sleep/eat/die time
-	//how many times it has ate;
-	//max eat
-	//variable to say that he has ate enough
-	//start time
-
-
+	int				flag;
 }				t_philo;
 
 typedef struct	s_data
@@ -98,6 +91,7 @@ void		*philo_cycle(void *phil);
 void		philo_birth_giver(t_data *data);
 void		philo_retire(t_data *data);
 void		info_philo(t_data *data);
+void		eat_check(t_data *data);
 
 /*UTILS*/
 void		initializer(t_data *data);

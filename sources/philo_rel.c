@@ -38,6 +38,7 @@ t_philo	*new_list(t_data *data, int philo_nbr)
 	node->fork2 = NULL;
 	node->fork_status1 = 0;
 	node->fork_status2 = 0;
+	node->flag = 0;
 	node->next_philo = NULL;
 	node->philo_data = NULL;
 	node->t_die = data->t_die;

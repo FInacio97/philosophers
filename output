@@ -1,779 +1,145 @@
 Nbr of philos: 0
-Nbr of philosophers: 200
-Time to die: 500
+Nbr of philosophers: 10
+Time to die: 310
 Time to eat: 200
-Time to sleep: 200
+Time to sleep: 100
 Eat count: 2147483647
-Number of philos: 200
-0ms 2 [33mhas taken a fork[0m
-0ms 2 [33mhas taken a fork[0m
-0ms 2 [35mis eating[0m
-0ms 4 [33mhas taken a fork[0m
-0ms 4 [33mhas taken a fork[0m
-0ms 4 [35mis eating[0m
-0ms 6 [33mhas taken a fork[0m
-0ms 6 [33mhas taken a fork[0m
-0ms 6 [35mis eating[0m
-0ms 8 [33mhas taken a fork[0m
-0ms 8 [33mhas taken a fork[0m
-0ms 8 [35mis eating[0m
-0ms 10 [33mhas taken a fork[0m
-0ms 10 [33mhas taken a fork[0m
-0ms 10 [35mis eating[0m
-0ms 12 [33mhas taken a fork[0m
-0ms 12 [33mhas taken a fork[0m
-0ms 12 [35mis eating[0m
-0ms 14 [33mhas taken a fork[0m
-0ms 14 [33mhas taken a fork[0m
-0ms 14 [35mis eating[0m
-0ms 16 [33mhas taken a fork[0m
-0ms 16 [33mhas taken a fork[0m
-0ms 16 [35mis eating[0m
-0ms 18 [33mhas taken a fork[0m
-0ms 18 [33mhas taken a fork[0m
-0ms 18 [35mis eating[0m
-0ms 20 [33mhas taken a fork[0m
-0ms 20 [33mhas taken a fork[0m
-0ms 20 [35mis eating[0m
-3ms 170 [33mhas taken a fork[0m
-3ms 170 [33mhas taken a fork[0m
-3ms 170 [35mis eating[0m
-5ms 188 [33mhas taken a fork[0m
-5ms 63 [33mhas taken a fork[0m
-5ms 63 [33mhas taken a fork[0m
-5ms 63 [35mis eating[0m
-5ms 168 [33mhas taken a fork[0m
-5ms 188 [33mhas taken a fork[0m
-5ms 188 [35mis eating[0m
-5ms 33 [33mhas taken a fork[0m
-5ms 33 [33mhas taken a fork[0m
-5ms 33 [35mis eating[0m
-5ms 168 [33mhas taken a fork[0m
-5ms 168 [35mis eating[0m
-9ms 58 [33mhas taken a fork[0m
-9ms 58 [33mhas taken a fork[0m
-9ms 58 [35mis eating[0m
-9ms 35 [33mhas taken a fork[0m
-9ms 35 [33mhas taken a fork[0m
-9ms 35 [35mis eating[0m
-9ms 174 [33mhas taken a fork[0m
-9ms 192 [33mhas taken a fork[0m
-9ms 64 [33mhas taken a fork[0m
-9ms 178 [33mhas taken a fork[0m
-9ms 78 [33mhas taken a fork[0m
-9ms 174 [33mhas taken a fork[0m
-9ms 196 [33mhas taken a fork[0m
-9ms 66 [33mhas taken a fork[0m
-9ms 174 [35mis eating[0m
-9ms 78 [33mhas taken a fork[0m
-9ms 78 [35mis eating[0m
-9ms 37 [33mhas taken a fork[0m
-9ms 37 [33mhas taken a fork[0m
-9ms 180 [33mhas taken a fork[0m
-9ms 196 [33mhas taken a fork[0m
-9ms 178 [33mhas taken a fork[0m
-9ms 178 [35mis eating[0m
-9ms 39 [33mhas taken a fork[0m
-9ms 180 [33mhas taken a fork[0m
-9ms 37 [35mis eating[0m
-9ms 180 [35mis eating[0m
-11ms 172 [33mhas taken a fork[0m
-11ms 172 [33mhas taken a fork[0m
-11ms 172 [35mis eating[0m
-11ms 91 [33mhas taken a fork[0m
-11ms 91 [33mhas taken a fork[0m
-11ms 91 [35mis eating[0m
-13ms 66 [33mhas taken a fork[0m
-13ms 39 [33mhas taken a fork[0m
-13ms 76 [33mhas taken a fork[0m
-13ms 182 [33mhas taken a fork[0m
-13ms 184 [33mhas taken a fork[0m
-13ms 192 [33mhas taken a fork[0m
-13ms 76 [33mhas taken a fork[0m
-13ms 192 [35mis eating[0m
-13ms 182 [33mhas taken a fork[0m
-13ms 72 [33mhas taken a fork[0m
-13ms 41 [33mhas taken a fork[0m
-13ms 184 [33mhas taken a fork[0m
-13ms 76 [35mis eating[0m
-13ms 55 [33mhas taken a fork[0m
-13ms 39 [35mis eating[0m
-13ms 74 [33mhas taken a fork[0m
-13ms 74 [33mhas taken a fork[0m
-13ms 72 [33mhas taken a fork[0m
-13ms 74 [35mis eating[0m
-13ms 72 [35mis eating[0m
-13ms 57 [33mhas taken a fork[0m
-13ms 186 [33mhas taken a fork[0m
-13ms 186 [33mhas taken a fork[0m
-13ms 186 [35mis eating[0m
-17ms 86 [33mhas taken a fork[0m
-17ms 86 [33mhas taken a fork[0m
-17ms 86 [35mis eating[0m
-17ms 25 [33mhas taken a fork[0m
-17ms 184 [35mis eating[0m
-17ms 27 [33mhas taken a fork[0m
-17ms 101 [33mhas taken a fork[0m
-17ms 27 [33mhas taken a fork[0m
-17ms 55 [33mhas taken a fork[0m
-17ms 55 [35mis eating[0m
-17ms 27 [35mis eating[0m
-17ms 190 [33mhas taken a fork[0m
-17ms 41 [33mhas taken a fork[0m
-17ms 198 [33mhas taken a fork[0m
-17ms 101 [33mhas taken a fork[0m
-17ms 101 [35mis eating[0m
-17ms 176 [33mhas taken a fork[0m
-17ms 176 [33mhas taken a fork[0m
-17ms 198 [33mhas taken a fork[0m
-17ms 41 [35mis eating[0m
-17ms 190 [33mhas taken a fork[0m
-17ms 190 [35mis eating[0m
-17ms 198 [35mis eating[0m
-17ms 80 [33mhas taken a fork[0m
-17ms 80 [33mhas taken a fork[0m
-17ms 80 [35mis eating[0m
-21ms 176 [35mis eating[0m
-21ms 200 [33mhas taken a fork[0m
-21ms 182 [35mis eating[0m
-21ms 96 [33mhas taken a fork[0m
-21ms 96 [33mhas taken a fork[0m
-21ms 42 [33mhas taken a fork[0m
-21ms 88 [33mhas taken a fork[0m
-21ms 25 [33mhas taken a fork[0m
-21ms 25 [35mis eating[0m
-21ms 120 [33mhas taken a fork[0m
-21ms 120 [33mhas taken a fork[0m
-21ms 120 [35mis eating[0m
-21ms 88 [33mhas taken a fork[0m
-21ms 88 [35mis eating[0m
-21ms 105 [33mhas taken a fork[0m
-21ms 105 [33mhas taken a fork[0m
-21ms 105 [35mis eating[0m
-25ms 68 [33mhas taken a fork[0m
-25ms 66 [35mis eating[0m
-25ms 194 [33mhas taken a fork[0m
-25ms 52 [33mhas taken a fork[0m
-25ms 92 [33mhas taken a fork[0m
-25ms 96 [35mis eating[0m
-25ms 110 [33mhas taken a fork[0m
-25ms 109 [33mhas taken a fork[0m
-25ms 194 [33mhas taken a fork[0m
-25ms 68 [33mhas taken a fork[0m
-25ms 68 [35mis eating[0m
-25ms 107 [33mhas taken a fork[0m
-25ms 107 [33mhas taken a fork[0m
-25ms 194 [35mis eating[0m
-25ms 52 [33mhas taken a fork[0m
-25ms 52 [35mis eating[0m
-29ms 122 [33mhas taken a fork[0m
-29ms 107 [35mis eating[0m
-29ms 196 [35mis eating[0m
-29ms 122 [33mhas taken a fork[0m
-29ms 29 [33mhas taken a fork[0m
-29ms 112 [33mhas taken a fork[0m
-29ms 200 [33mhas taken a fork[0m
-29ms 29 [33mhas taken a fork[0m
-29ms 29 [35mis eating[0m
-29ms 23 [33mhas taken a fork[0m
-29ms 23 [33mhas taken a fork[0m
-29ms 200 [35mis eating[0m
-29ms 23 [35mis eating[0m
-29ms 110 [33mhas taken a fork[0m
-29ms 110 [35mis eating[0m
-33ms 71 [33mhas taken a fork[0m
-33ms 112 [33mhas taken a fork[0m
-33ms 112 [35mis eating[0m
-33ms 99 [33mhas taken a fork[0m
-33ms 47 [33mhas taken a fork[0m
-33ms 51 [33mhas taken a fork[0m
-33ms 102 [33mhas taken a fork[0m
-33ms 94 [33mhas taken a fork[0m
-33ms 47 [33mhas taken a fork[0m
-33ms 94 [33mhas taken a fork[0m
-33ms 47 [35mis eating[0m
-33ms 48 [33mhas taken a fork[0m
-33ms 94 [35mis eating[0m
-37ms 84 [33mhas taken a fork[0m
-37ms 31 [33mhas taken a fork[0m
-37ms 114 [33mhas taken a fork[0m
-37ms 31 [33mhas taken a fork[0m
-37ms 132 [33mhas taken a fork[0m
-37ms 31 [35mis eating[0m
-37ms 99 [33mhas taken a fork[0m
-37ms 122 [35mis eating[0m
-37ms 132 [33mhas taken a fork[0m
-37ms 114 [33mhas taken a fork[0m
-37ms 99 [35mis eating[0m
-37ms 132 [35mis eating[0m
-37ms 149 [33mhas taken a fork[0m
-37ms 149 [33mhas taken a fork[0m
-37ms 149 [35mis eating[0m
-37ms 60 [33mhas taken a fork[0m
-37ms 60 [33mhas taken a fork[0m
-37ms 60 [35mis eating[0m
-41ms 164 [33mhas taken a fork[0m
-41ms 136 [33mhas taken a fork[0m
-41ms 45 [33mhas taken a fork[0m
-41ms 82 [33mhas taken a fork[0m
-41ms 151 [33mhas taken a fork[0m
-41ms 126 [33mhas taken a fork[0m
-41ms 117 [33mhas taken a fork[0m
-41ms 134 [33mhas taken a fork[0m
-41ms 45 [33mhas taken a fork[0m
-41ms 45 [35mis eating[0m
-41ms 147 [33mhas taken a fork[0m
-41ms 126 [33mhas taken a fork[0m
-41ms 147 [33mhas taken a fork[0m
-41ms 153 [33mhas taken a fork[0m
-41ms 134 [33mhas taken a fork[0m
-41ms 117 [33mhas taken a fork[0m
-41ms 136 [33mhas taken a fork[0m
-41ms 126 [35mis eating[0m
-41ms 166 [33mhas taken a fork[0m
-41ms 153 [33mhas taken a fork[0m
-41ms 166 [33mhas taken a fork[0m
-41ms 153 [35mis eating[0m
-41ms 117 [35mis eating[0m
-41ms 147 [35mis eating[0m
-41ms 114 [35mis eating[0m
-45ms 166 [35mis eating[0m
-45ms 151 [33mhas taken a fork[0m
-45ms 151 [35mis eating[0m
-45ms 162 [33mhas taken a fork[0m
-45ms 162 [33mhas taken a fork[0m
-45ms 162 [35mis eating[0m
-45ms 136 [35mis eating[0m
-45ms 164 [33mhas taken a fork[0m
-45ms 164 [35mis eating[0m
-45ms 84 [33mhas taken a fork[0m
-45ms 129 [33mhas taken a fork[0m
-45ms 141 [33mhas taken a fork[0m
-45ms 141 [33mhas taken a fork[0m
-45ms 141 [35mis eating[0m
-45ms 82 [33mhas taken a fork[0m
-45ms 82 [35mis eating[0m
-45ms 129 [33mhas taken a fork[0m
-45ms 129 [35mis eating[0m
-46ms 119 [33mhas taken a fork[0m
-49ms 134 [35mis eating[0m
-49ms 142 [33mhas taken a fork[0m
-53ms 84 [35mis eating[0m
-53ms 145 [33mhas taken a fork[0m
-53ms 145 [33mhas taken a fork[0m
-53ms 145 [35mis eating[0m
-57ms 157 [33mhas taken a fork[0m
-57ms 157 [33mhas taken a fork[0m
-57ms 157 [35mis eating[0m
-57ms 124 [33mhas taken a fork[0m
-57ms 124 [33mhas taken a fork[0m
-57ms 124 [35mis eating[0m
-59ms 159 [33mhas taken a fork[0m
-59ms 159 [33mhas taken a fork[0m
-59ms 159 [35mis eating[0m
-61ms 155 [33mhas taken a fork[0m
-61ms 155 [33mhas taken a fork[0m
-61ms 155 [35mis eating[0m
-61ms 160 [33mhas taken a fork[0m
-61ms 139 [33mhas taken a fork[0m
-61ms 139 [33mhas taken a fork[0m
-61ms 139 [35mis eating[0m
-65ms 131 [33mhas taken a fork[0m
-201ms 4 [34mis sleeping[0m
-201ms 2 [34mis sleeping[0m
-205ms 33 [34mis sleeping[0m
-209ms 16 [34mis sleeping[0m
-213ms 74 [34mis sleeping[0m
-213ms 20 [34mis sleeping[0m
-213ms 39 [34mis sleeping[0m
-213ms 178 [34mis sleeping[0m
-217ms 10 [34mis sleeping[0m
-217ms 5 [33mhas taken a fork[0m
-217ms 5 [33mhas taken a fork[0m
-217ms 5 [35mis eating[0m
-221ms 8 [34mis sleeping[0m
-221ms 12 [34mis sleeping[0m
-221ms 14 [34mis sleeping[0m
-225ms 11 [33mhas taken a fork[0m
-225ms 77 [33mhas taken a fork[0m
-225ms 179 [33mhas taken a fork[0m
-225ms 11 [33mhas taken a fork[0m
-225ms 11 [35mis eating[0m
-225ms 18 [34mis sleeping[0m
-225ms 179 [33mhas taken a fork[0m
-225ms 179 [35mis eating[0m
-225ms 27 [34mis sleeping[0m
-229ms 110 [34mis sleeping[0m
-229ms 75 [33mhas taken a fork[0m
-229ms 35 [34mis sleeping[0m
-229ms 181 [33mhas taken a fork[0m
-229ms 3 [33mhas taken a fork[0m
-229ms 3 [33mhas taken a fork[0m
-229ms 200 [34mis sleeping[0m
-229ms 180 [34mis sleeping[0m
-233ms 112 [34mis sleeping[0m
-233ms 76 [34mis sleeping[0m
-233ms 13 [33mhas taken a fork[0m
-233ms 172 [34mis sleeping[0m
-233ms 183 [33mhas taken a fork[0m
-233ms 13 [33mhas taken a fork[0m
-233ms 13 [35mis eating[0m
-233ms 78 [34mis sleeping[0m
-233ms 75 [33mhas taken a fork[0m
-233ms 75 [35mis eating[0m
-237ms 31 [34mis sleeping[0m
-237ms 88 [34mis sleeping[0m
-237ms 170 [34mis sleeping[0m
-237ms 90 [33mhas taken a fork[0m
-237ms 3 [35mis eating[0m
-237ms 184 [34mis sleeping[0m
-237ms 90 [33mhas taken a fork[0m
-237ms 90 [35mis eating[0m
-241ms 89 [33mhas taken a fork[0m
-241ms 182 [34mis sleeping[0m
-241ms 91 [34mis sleeping[0m
-245ms 136 [34mis sleeping[0m
-245ms 128 [33mhas taken a fork[0m
-245ms 77 [33mhas taken a fork[0m
-245ms 128 [33mhas taken a fork[0m
-245ms 128 [35mis eating[0m
-245ms 77 [35mis eating[0m
-245ms 123 [33mhas taken a fork[0m
-245ms 131 [33mhas taken a fork[0m
-245ms 72 [34mis sleeping[0m
-245ms 176 [34mis sleeping[0m
-245ms 86 [34mis sleeping[0m
-245ms 131 [35mis eating[0m
-249ms 32 [33mhas taken a fork[0m
-249ms 188 [34mis sleeping[0m
-249ms 32 [33mhas taken a fork[0m
-249ms 186 [34mis sleeping[0m
-249ms 194 [34mis sleeping[0m
-249ms 32 [35mis eating[0m
-249ms 68 [34mis sleeping[0m
-249ms 132 [34mis sleeping[0m
-253ms 19 [33mhas taken a fork[0m
-253ms 166 [34mis sleeping[0m
-253ms 105 [34mis sleeping[0m
-253ms 145 [34mis sleeping[0m
-253ms 101 [34mis sleeping[0m
-253ms 25 [34mis sleeping[0m
-253ms 17 [33mhas taken a fork[0m
-253ms 174 [34mis sleeping[0m
-253ms 34 [33mhas taken a fork[0m
-253ms 34 [33mhas taken a fork[0m
-253ms 34 [35mis eating[0m
-253ms 17 [33mhas taken a fork[0m
-253ms 17 [35mis eating[0m
-257ms 55 [34mis sleeping[0m
-257ms 173 [33mhas taken a fork[0m
-257ms 162 [34mis sleeping[0m
-257ms 192 [34mis sleeping[0m
-257ms 63 [34mis sleeping[0m
-257ms 21 [33mhas taken a fork[0m
-257ms 151 [34mis sleeping[0m
-257ms 21 [33mhas taken a fork[0m
-257ms 21 [35mis eating[0m
-260ms 23 [34mis sleeping[0m
-261ms 19 [33mhas taken a fork[0m
-261ms 159 [34mis sleeping[0m
-261ms 15 [33mhas taken a fork[0m
-261ms 185 [33mhas taken a fork[0m
-261ms 168 [34mis sleeping[0m
-261ms 163 [33mhas taken a fork[0m
-261ms 15 [33mhas taken a fork[0m
-261ms 185 [33mhas taken a fork[0m
-261ms 185 [35mis eating[0m
-261ms 15 [35mis eating[0m
-265ms 73 [33mhas taken a fork[0m
-265ms 157 [34mis sleeping[0m
-265ms 6 [34mis sleeping[0m
-265ms 30 [33mhas taken a fork[0m
-265ms 189 [33mhas taken a fork[0m
-265ms 73 [33mhas taken a fork[0m
-265ms 129 [34mis sleeping[0m
-265ms 73 [35mis eating[0m
-269ms 141 [34mis sleeping[0m
-269ms 109 [33mhas taken a fork[0m
-269ms 133 [33mhas taken a fork[0m
-269ms 167 [33mhas taken a fork[0m
-269ms 150 [33mhas taken a fork[0m
-269ms 109 [35mis eating[0m
-269ms 54 [33mhas taken a fork[0m
-269ms 167 [33mhas taken a fork[0m
-269ms 69 [33mhas taken a fork[0m
-269ms 54 [33mhas taken a fork[0m
-269ms 167 [35mis eating[0m
-269ms 69 [33mhas taken a fork[0m
-269ms 198 [34mis sleeping[0m
-269ms 1 [33mhas taken a fork[0m
-269ms 1 [33mhas taken a fork[0m
-269ms 1 [35mis eating[0m
-273ms 187 [33mhas taken a fork[0m
-273ms 66 [34mis sleeping[0m
-273ms 169 [33mhas taken a fork[0m
-273ms 19 [35mis eating[0m
-273ms 41 [34mis sleeping[0m
-273ms 137 [33mhas taken a fork[0m
-273ms 187 [33mhas taken a fork[0m
-273ms 52 [34mis sleeping[0m
-273ms 80 [34mis sleeping[0m
-273ms 113 [33mhas taken a fork[0m
-273ms 102 [33mhas taken a fork[0m
-273ms 102 [35mis eating[0m
-273ms 47 [34mis sleeping[0m
-277ms 37 [34mis sleeping[0m
-277ms 171 [33mhas taken a fork[0m
-277ms 69 [35mis eating[0m
-277ms 38 [33mhas taken a fork[0m
-277ms 160 [33mhas taken a fork[0m
-277ms 171 [33mhas taken a fork[0m
-277ms 62 [33mhas taken a fork[0m
-277ms 64 [33mhas taken a fork[0m
-277ms 160 [35mis eating[0m
-277ms 62 [33mhas taken a fork[0m
-277ms 171 [35mis eating[0m
-277ms 100 [33mhas taken a fork[0m
-277ms 193 [33mhas taken a fork[0m
-277ms 193 [33mhas taken a fork[0m
-277ms 193 [35mis eating[0m
-281ms 169 [33mhas taken a fork[0m
-281ms 158 [33mhas taken a fork[0m
-281ms 120 [34mis sleeping[0m
-281ms 111 [33mhas taken a fork[0m
-281ms 173 [33mhas taken a fork[0m
-281ms 54 [35mis eating[0m
-281ms 158 [33mhas taken a fork[0m
-281ms 7 [33mhas taken a fork[0m
-281ms 173 [35mis eating[0m
-281ms 7 [33mhas taken a fork[0m
-281ms 158 [35mis eating[0m
-281ms 7 [35mis eating[0m
-285ms 137 [33mhas taken a fork[0m
-285ms 187 [35mis eating[0m
-285ms 38 [33mhas taken a fork[0m
-285ms 26 [33mhas taken a fork[0m
-285ms 190 [34mis sleeping[0m
-285ms 153 [34mis sleeping[0m
-285ms 38 [35mis eating[0m
-285ms 26 [33mhas taken a fork[0m
-285ms 26 [35mis eating[0m
-285ms 85 [33mhas taken a fork[0m
-285ms 85 [33mhas taken a fork[0m
-285ms 85 [35mis eating[0m
-285ms 164 [34mis sleeping[0m
-285ms 111 [33mhas taken a fork[0m
-285ms 142 [33mhas taken a fork[0m
-285ms 111 [35mis eating[0m
-285ms 142 [35mis eating[0m
-289ms 140 [33mhas taken a fork[0m
-289ms 177 [33mhas taken a fork[0m
-289ms 169 [35mis eating[0m
-289ms 97 [33mhas taken a fork[0m
-289ms 9 [33mhas taken a fork[0m
-289ms 122 [34mis sleeping[0m
-289ms 96 [34mis sleeping[0m
-289ms 177 [33mhas taken a fork[0m
-289ms 62 [35mis eating[0m
-289ms 9 [33mhas taken a fork[0m
-289ms 9 [35mis eating[0m
-289ms 177 [35mis eating[0m
-291ms 156 [33mhas taken a fork[0m
-293ms 87 [33mhas taken a fork[0m
-293ms 48 [33mhas taken a fork[0m
-293ms 137 [35mis eating[0m
-293ms 48 [35mis eating[0m
-293ms 87 [33mhas taken a fork[0m
-293ms 87 [35mis eating[0m
-293ms 92 [33mhas taken a fork[0m
-293ms 175 [33mhas taken a fork[0m
-293ms 92 [35mis eating[0m
-293ms 175 [33mhas taken a fork[0m
-293ms 175 [35mis eating[0m
-297ms 79 [33mhas taken a fork[0m
-297ms 60 [34mis sleeping[0m
-297ms 97 [33mhas taken a fork[0m
-297ms 144 [33mhas taken a fork[0m
-297ms 79 [33mhas taken a fork[0m
-297ms 82 [34mis sleeping[0m
-297ms 97 [35mis eating[0m
-297ms 79 [35mis eating[0m
-297ms 199 [33mhas taken a fork[0m
-297ms 196 [34mis sleeping[0m
-297ms 199 [33mhas taken a fork[0m
-297ms 199 [35mis eating[0m
-301ms 140 [33mhas taken a fork[0m
-301ms 181 [33mhas taken a fork[0m
-301ms 64 [35mis eating[0m
-301ms 134 [34mis sleeping[0m
-301ms 140 [35mis eating[0m
-301ms 24 [33mhas taken a fork[0m
-301ms 71 [33mhas taken a fork[0m
-301ms 183 [33mhas taken a fork[0m
-301ms 24 [33mhas taken a fork[0m
-301ms 24 [35mis eating[0m
-302ms 123 [33mhas taken a fork[0m
-302ms 123 [35mis eating[0m
-305ms 117 [34mis sleeping[0m
-305ms 195 [33mhas taken a fork[0m
-305ms 144 [33mhas taken a fork[0m
-305ms 195 [33mhas taken a fork[0m
-305ms 195 [35mis eating[0m
-305ms 144 [35mis eating[0m
-309ms 155 [34mis sleeping[0m
-309ms 154 [33mhas taken a fork[0m
-309ms 126 [34mis sleeping[0m
-309ms 83 [33mhas taken a fork[0m
-309ms 154 [33mhas taken a fork[0m
-309ms 154 [35mis eating[0m
-309ms 147 [34mis sleeping[0m
-309ms 83 [33mhas taken a fork[0m
-309ms 83 [35mis eating[0m
-313ms 183 [35mis eating[0m
-313ms 81 [33mhas taken a fork[0m
-313ms 181 [35mis eating[0m
-313ms 81 [33mhas taken a fork[0m
-313ms 81 [35mis eating[0m
-313ms 67 [33mhas taken a fork[0m
-313ms 67 [33mhas taken a fork[0m
-313ms 67 [35mis eating[0m
-313ms 125 [33mhas taken a fork[0m
-313ms 125 [33mhas taken a fork[0m
-313ms 125 [35mis eating[0m
-316ms 22 [33mhas taken a fork[0m
-317ms 71 [35mis eating[0m
-317ms 58 [34mis sleeping[0m
-317ms 197 [33mhas taken a fork[0m
-317ms 197 [33mhas taken a fork[0m
-317ms 197 [35mis eating[0m
-317ms 189 [33mhas taken a fork[0m
-317ms 156 [33mhas taken a fork[0m
-317ms 104 [33mhas taken a fork[0m
-317ms 104 [33mhas taken a fork[0m
-317ms 189 [35mis eating[0m
-317ms 51 [33mhas taken a fork[0m
-317ms 104 [35mis eating[0m
-317ms 51 [35mis eating[0m
-319ms 124 [34mis sleeping[0m
-320ms 146 [33mhas taken a fork[0m
-320ms 146 [33mhas taken a fork[0m
-320ms 146 [35mis eating[0m
-320ms 59 [33mhas taken a fork[0m
-320ms 59 [33mhas taken a fork[0m
-320ms 59 [35mis eating[0m
-320ms 116 [33mhas taken a fork[0m
-320ms 116 [33mhas taken a fork[0m
-320ms 116 [35mis eating[0m
-320ms 61 [33mhas taken a fork[0m
-321ms 53 [33mhas taken a fork[0m
-321ms 94 [34mis sleeping[0m
-321ms 127 [33mhas taken a fork[0m
-325ms 156 [35mis eating[0m
-325ms 84 [34mis sleeping[0m
-333ms 114 [34mis sleeping[0m
-333ms 36 [33mhas taken a fork[0m
-333ms 36 [33mhas taken a fork[0m
-333ms 36 [35mis eating[0m
-337ms 57 [33mhas taken a fork[0m
-337ms 57 [35mis eating[0m
-337ms 163 [33mhas taken a fork[0m
-337ms 163 [35mis eating[0m
-337ms 45 [34mis sleeping[0m
-339ms 107 [34mis sleeping[0m
-339ms 44 [33mhas taken a fork[0m
-339ms 44 [33mhas taken a fork[0m
-339ms 44 [35mis eating[0m
-340ms 46 [33mhas taken a fork[0m
-340ms 46 [33mhas taken a fork[0m
-340ms 46 [35mis eating[0m
-341ms 42 [33mhas taken a fork[0m
-341ms 42 [35mis eating[0m
-341ms 165 [33mhas taken a fork[0m
-341ms 165 [33mhas taken a fork[0m
-341ms 165 [35mis eating[0m
-343ms 135 [33mhas taken a fork[0m
-343ms 135 [33mhas taken a fork[0m
-343ms 135 [35mis eating[0m
-345ms 119 [33mhas taken a fork[0m
-345ms 119 [35mis eating[0m
-345ms 40 [33mhas taken a fork[0m
-345ms 40 [33mhas taken a fork[0m
-345ms 40 [35mis eating[0m
-345ms 106 [33mhas taken a fork[0m
-345ms 106 [33mhas taken a fork[0m
-345ms 106 [35mis eating[0m
-349ms 191 [33mhas taken a fork[0m
-349ms 191 [33mhas taken a fork[0m
-349ms 191 [35mis eating[0m
-353ms 29 [34mis sleeping[0m
-357ms 99 [34mis sleeping[0m
-357ms 150 [33mhas taken a fork[0m
-357ms 150 [35mis eating[0m
-361ms 100 [33mhas taken a fork[0m
-361ms 100 [35mis eating[0m
-361ms 152 [33mhas taken a fork[0m
-361ms 152 [33mhas taken a fork[0m
-361ms 152 [35mis eating[0m
-373ms 121 [33mhas taken a fork[0m
-373ms 121 [33mhas taken a fork[0m
-373ms 121 [35mis eating[0m
-377ms 133 [33mhas taken a fork[0m
-377ms 133 [35mis eating[0m
-397ms 95 [33mhas taken a fork[0m
-397ms 95 [33mhas taken a fork[0m
-397ms 95 [35mis eating[0m
-401ms 4 [38;5;203mis thinking[0m
-401ms 2 [38;5;203mis thinking[0m
-405ms 33 [38;5;203mis thinking[0m
-405ms 113 [33mhas taken a fork[0m
-405ms 113 [35mis eating[0m
-409ms 115 [33mhas taken a fork[0m
-413ms 139 [34mis sleeping[0m
-417ms 138 [33mhas taken a fork[0m
-417ms 178 [38;5;203mis thinking[0m
-425ms 11 [34mis sleeping[0m
-428ms 8 [38;5;203mis thinking[0m
-433ms 112 [38;5;203mis thinking[0m
-433ms 16 [38;5;203mis thinking[0m
-433ms 20 [38;5;203mis thinking[0m
-437ms 200 [38;5;203mis thinking[0m
-441ms 110 [38;5;203mis thinking[0m
-445ms 27 [38;5;203mis thinking[0m
-445ms 136 [38;5;203mis thinking[0m
-449ms 186 [38;5;203mis thinking[0m
-449ms 184 [38;5;203mis thinking[0m
-453ms 34 [34mis sleeping[0m
-453ms 166 [38;5;203mis thinking[0m
-453ms 86 [38;5;203mis thinking[0m
-453ms 72 [38;5;203mis thinking[0m
-453ms 5 [34mis sleeping[0m
-456ms 76 [38;5;203mis thinking[0m
-457ms 192 [38;5;203mis thinking[0m
-457ms 98 [33mhas taken a fork[0m
-461ms 159 [38;5;203mis thinking[0m
-461ms 4 [33mhas taken a fork[0m
-465ms 32 [34mis sleeping[0m
-465ms 74 [38;5;203mis thinking[0m
-465ms 172 [38;5;203mis thinking[0m
-469ms 23 [38;5;203mis thinking[0m
-469ms 28 [33mhas taken a fork[0m
-469ms 129 [38;5;203mis thinking[0m
-469ms 31 [38;5;203mis thinking[0m
-469ms 10 [38;5;203mis thinking[0m
-469ms 10 [33mhas taken a fork[0m
-469ms 129 [33mhas taken a fork[0m
-469ms 129 [33mhas taken a fork[0m
-469ms 129 [35mis eating[0m
-473ms 179 [34mis sleeping[0m
-473ms 73 [34mis sleeping[0m
-473ms 66 [38;5;203mis thinking[0m
-473ms 128 [34mis sleeping[0m
-473ms 41 [38;5;203mis thinking[0m
-475ms 168 [38;5;203mis thinking[0m
-475ms 28 [33mhas taken a fork[0m
-475ms 28 [35mis eating[0m
-476ms 33 [33mhas taken a fork[0m
-476ms 33 [33mhas taken a fork[0m
-476ms 33 [35mis eating[0m
-477ms 52 [38;5;203mis thinking[0m
-478ms 102 [34mis sleeping[0m
-479ms 12 [38;5;203mis thinking[0m
-481ms 170 [38;5;203mis thinking[0m
-481ms 30 [33mhas taken a fork[0m
-481ms 30 [35mis eating[0m
-485ms 85 [34mis sleeping[0m
-485ms 111 [34mis sleeping[0m
-485ms 91 [38;5;203mis thinking[0m
-485ms 55 [38;5;203mis thinking[0m
-485ms 188 [38;5;203mis thinking[0m
-485ms 69 [34mis sleeping[0m
-489ms 122 [38;5;203mis thinking[0m
-489ms 105 [38;5;203mis thinking[0m
-489ms 162 [38;5;203mis thinking[0m
-489ms 25 [38;5;203mis thinking[0m
-489ms 178 [33mhas taken a fork[0m
-489ms 37 [38;5;203mis thinking[0m
-493ms 187 [34mis sleeping[0m
-493ms 68 [38;5;203mis thinking[0m
-493ms 35 [38;5;203mis thinking[0m
-493ms 35 [33mhas taken a fork[0m
-493ms 3 [34mis sleeping[0m
-493ms 68 [33mhas taken a fork[0m
-493ms 6 [38;5;203mis thinking[0m
-497ms 18 [38;5;203mis thinking[0m
-497ms 120 [38;5;203mis thinking[0m
-497ms 47 [38;5;203mis thinking[0m
-497ms 17 [34mis sleeping[0m
-497ms 149 [34mis sleeping[0m
-497ms 96 [38;5;203mis thinking[0m
-501ms 20 [0;31mdied[0m
-501ms 20 [0;31mdied[0m
-501ms 161 [0;31mdied[0m
-501ms 75 [34mis sleeping[0m
-503ms 49 [0;31mdied[0m
-503ms 50 [0;31mdied[0m
-505ms 108 [0;31mdied[0m
-509ms 16 [0;31mdied[0m
-509ms 63 [0;31mdied[0m
-509ms 14 [0;31mdied[0m
-509ms 61 [0;31mdied[0m
-510ms 115 [0;31mdied[0m
-512ms 172 [0;31mdied[0m
-512ms 172 [0;31mdied[0m
-512ms 37 [0;31mdied[0m
-512ms 37 [0;31mdied[0m
-512ms 170 [0;31mdied[0m
-512ms 170 [0;31mdied[0m
-513ms 56 [0;31mdied[0m
-513ms 8 [0;31mdied[0m
-513ms 8 [0;31mdied[0m
-513ms 103 [0;31mdied[0m
-513ms 103 [0;31mdied[0m
-517ms 91 [0;31mdied[0m
-517ms 91 [0;31mdied[0m
-517ms 148 [0;31mdied[0m
-517ms 93 [0;31mdied[0m
-517ms 70 [0;31mdied[0m
-518ms 41 [0;31mdied[0m
-518ms 41 [0;31mdied[0m
-519ms 72 [0;31mdied[0m
-521ms 118 [0;31mdied[0m
-521ms 43 [0;31mdied[0m
-521ms 43 [0;31mdied[0m
-521ms 192 [0;31mdied[0m
-521ms 192 [0;31mdied[0m
-521ms 58 [0;31mdied[0m
-521ms 55 [0;31mdied[0m
-521ms 65 [0;31mdied[0m
-521ms 22 [0;31mdied[0m
-522ms 105 [0;31mdied[0m
-525ms 35 [0;31mdied[0m
-525ms 6 [0;31mdied[0m
-526ms 68 [0;31mdied[0m
-526ms 18 [0;31mdied[0m
-526ms 96 [0;31mdied[0m
-526ms 52 [0;31mdied[0m
-526ms 52 [0;31mdied[0m
-526ms 89 [0;31mdied[0m
-533ms 74 [0;31mdied[0m
-533ms 130 [0;31mdied[0m
-534ms 47 [0;31mdied[0m
-536ms 112 [0;31mdied[0m
-537ms 138 [0;31mdied[0m
-537ms 86 [0;31mdied[0m
-537ms 66 [0;31mdied[0m
-537ms 27 [0;31mdied[0m
-538ms 31 [0;31mdied[0m
-541ms 120 [0;31mdied[0m
-541ms 120 [0;31mdied[0m
-541ms 107 [0;31mdied[0m
-542ms 12 [0;31mdied[0m
-545ms 99 [0;31mdied[0m
-545ms 122 [0;31mdied[0m
-545ms 45 [0;31mdied[0m
-553ms 162 [0;31mdied[0m
-561ms 136 [0;31mdied[0m
-565ms 166 [0;31mdied[0m
-565ms 149 [0;31mdied[0m
-565ms 29 [0;31mdied[0m
-569ms 139 [0;31mdied[0m
+Number of philos: 10
+fork[1]: 0x4a83080
+fork[2]: 0x4a830a8
+fork[3]: 0x4a830d0
+fork[4]: 0x4a830f8
+fork[5]: 0x4a83120
+fork[6]: 0x4a83148
+fork[7]: 0x4a83170
+fork[8]: 0x4a83198
+fork[9]: 0x4a831c0
+fork[10]: 0x4a831e8
+fork[11]: 0x4a83210
+Lock: 0x1ffefffbc0
+eat: 0x1ffefffbe8
+printer: 0x1ffefffc10
+5ms 2 [33mhas taken a fork[0m
+5ms 2 [33mhas taken a fork[0m
+6ms 2 [35mis eating[0m
+206ms 2 [34mis sleeping[0m
+306ms 2 [38;5;203mis thinking[0m
+306ms 2 [33mhas taken a fork[0m
+306ms 2 [33mhas taken a fork[0m
+306ms 2 [35mis eating[0m
+506ms 2 [34mis sleeping[0m
+606ms 2 [38;5;203mis thinking[0m
+606ms 2 [33mhas taken a fork[0m
+606ms 2 [33mhas taken a fork[0m
+606ms 2 [35mis eating[0m
+806ms 2 [34mis sleeping[0m
+906ms 2 [38;5;203mis thinking[0m
+906ms 2 [33mhas taken a fork[0m
+906ms 2 [33mhas taken a fork[0m
+906ms 2 [35mis eating[0m
+1106ms 2 [34mis sleeping[0m
+1206ms 2 [38;5;203mis thinking[0m
+1206ms 2 [33mhas taken a fork[0m
+1206ms 2 [33mhas taken a fork[0m
+1206ms 2 [35mis eating[0m
+1406ms 2 [34mis sleeping[0m
+1506ms 2 [38;5;203mis thinking[0m
+1506ms 2 [33mhas taken a fork[0m
+1506ms 2 [33mhas taken a fork[0m
+1506ms 2 [35mis eating[0m
+1706ms 2 [34mis sleeping[0m
+1806ms 2 [38;5;203mis thinking[0m
+1806ms 2 [33mhas taken a fork[0m
+1806ms 2 [33mhas taken a fork[0m
+1806ms 2 [35mis eating[0m
+2006ms 2 [34mis sleeping[0m
+2106ms 2 [38;5;203mis thinking[0m
+2106ms 2 [33mhas taken a fork[0m
+2106ms 2 [33mhas taken a fork[0m
+2106ms 2 [35mis eating[0m
+2306ms 2 [34mis sleeping[0m
+2406ms 2 [38;5;203mis thinking[0m
+2406ms 2 [33mhas taken a fork[0m
+2406ms 2 [33mhas taken a fork[0m
+2406ms 2 [35mis eating[0m
+2606ms 2 [34mis sleeping[0m
+2706ms 2 [38;5;203mis thinking[0m
+2706ms 2 [33mhas taken a fork[0m
+2706ms 2 [33mhas taken a fork[0m
+2706ms 2 [35mis eating[0m
+2906ms 2 [34mis sleeping[0m
+3006ms 2 [38;5;203mis thinking[0m
+3006ms 2 [33mhas taken a fork[0m
+3006ms 2 [33mhas taken a fork[0m
+3006ms 2 [35mis eating[0m
+3206ms 2 [34mis sleeping[0m
+3306ms 2 [38;5;203mis thinking[0m
+3306ms 2 [33mhas taken a fork[0m
+3306ms 2 [33mhas taken a fork[0m
+3306ms 2 [35mis eating[0m
+3506ms 2 [34mis sleeping[0m
+3606ms 2 [38;5;203mis thinking[0m
+3606ms 2 [33mhas taken a fork[0m
+3606ms 2 [33mhas taken a fork[0m
+3606ms 2 [35mis eating[0m
+3806ms 2 [34mis sleeping[0m
+3906ms 2 [38;5;203mis thinking[0m
+3906ms 2 [33mhas taken a fork[0m
+3906ms 2 [33mhas taken a fork[0m
+3906ms 2 [35mis eating[0m
+4106ms 2 [34mis sleeping[0m
+4206ms 2 [38;5;203mis thinking[0m
+4206ms 2 [33mhas taken a fork[0m
+4206ms 2 [33mhas taken a fork[0m
+4206ms 2 [35mis eating[0m
+4406ms 2 [34mis sleeping[0m
+4506ms 2 [38;5;203mis thinking[0m
+4506ms 2 [33mhas taken a fork[0m
+4506ms 2 [33mhas taken a fork[0m
+4506ms 2 [35mis eating[0m
+4706ms 2 [34mis sleeping[0m
+4806ms 2 [38;5;203mis thinking[0m
+4806ms 2 [33mhas taken a fork[0m
+4806ms 2 [33mhas taken a fork[0m
+4806ms 2 [35mis eating[0m
+5006ms 2 [34mis sleeping[0m
+5106ms 2 [38;5;203mis thinking[0m
+5106ms 2 [33mhas taken a fork[0m
+5106ms 2 [33mhas taken a fork[0m
+5106ms 2 [35mis eating[0m
+5306ms 2 [34mis sleeping[0m
+5406ms 2 [38;5;203mis thinking[0m
+5406ms 2 [33mhas taken a fork[0m
+5406ms 2 [33mhas taken a fork[0m
+5406ms 2 [35mis eating[0m
+5606ms 2 [34mis sleeping[0m
+5706ms 2 [38;5;203mis thinking[0m
+5706ms 2 [33mhas taken a fork[0m
+5706ms 2 [33mhas taken a fork[0m
+5706ms 2 [35mis eating[0m
+5906ms 2 [34mis sleeping[0m
+6006ms 2 [38;5;203mis thinking[0m
+6006ms 2 [33mhas taken a fork[0m
+6006ms 2 [33mhas taken a fork[0m
+6006ms 2 [35mis eating[0m
+6206ms 2 [34mis sleeping[0m
+6306ms 2 [38;5;203mis thinking[0m
+6306ms 2 [33mhas taken a fork[0m
+6306ms 2 [33mhas taken a fork[0m
+6306ms 2 [35mis eating[0m
+6506ms 2 [34mis sleeping[0m
+6606ms 2 [38;5;203mis thinking[0m
+6606ms 2 [33mhas taken a fork[0m
+6606ms 2 [33mhas taken a fork[0m
+6606ms 2 [35mis eating[0m
+6806ms 2 [34mis sleeping[0m
+6906ms 2 [38;5;203mis thinking[0m
+6906ms 2 [33mhas taken a fork[0m
+6906ms 2 [33mhas taken a fork[0m
+6906ms 2 [35mis eating[0m
+7106ms 2 [34mis sleeping[0m
+7206ms 2 [38;5;203mis thinking[0m
+7206ms 2 [33mhas taken a fork[0m
+7206ms 2 [33mhas taken a fork[0m
+7206ms 2 [35mis eating[0m
+7328ms 4 [0;31mdied[0m

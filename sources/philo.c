@@ -32,7 +32,14 @@ int	main(int ac, char **av)
 	else
 	{
 		philo_generator(&data);
+		int i = -1;
+		while (++i <= data.nbr_of_philo)
+			printf("fork[%d]: %p\n", i + 1, &data.fork[i]);
+		printf("Lock: %p\n", &data.lock);
+		printf("eat: %p\n", &data.eat);
+		printf("printer: %p\n", &data.printer);
 		philo_birth_giver(&data);
+		eat_check(&data);
 		philo_retire(&data);
 		fork_destroyer(&data);
 		delete_list(&data);
