@@ -27,7 +27,7 @@ void	get_fork2(t_data *data, t_philo *philo)
 		if (check_pulse(data, philo) == 1)
 			break ;
 	}
-	if (chech_status(data, philo) == 0 && check_pulse(data, philo) == 0)
+	if (check_pulse(data, philo) == 0)
 		printer(data, philo, FORK);
 }
 
@@ -46,7 +46,7 @@ int	get_fork(t_data *data, t_philo *philo)
 		if (check_pulse(data, philo) == 1)
 			break;
 	}
-	if (chech_status(data, philo) == 0 && check_pulse(data, philo) == 0)
+	if (check_pulse(data, philo) == 0)
 		printer(data, philo, FORK);
 	get_fork2(data, philo);
 	return (0);

@@ -120,9 +120,16 @@ void	eat_check(t_data *data)
 		ts = time_stamp(data);
 		if (ts < check_time)
 			continue ;
+		pthread_mutex_lock(&data->lock);	
 		if (chech_status(data, NULL) == 1)
+		{
+			pthread_mutex_unlock(&data->lock);
 			break ;
+		}
 		else
-		check_time = ts + 200;
+		{
+			pthread_mutex_unlock(&data->lock);
+			check_time = ts + 200;
+		}
 	}
 }
