@@ -6,21 +6,21 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:43:01 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/03 22:38:11 by fda-estr         ###   ########.fr       */
+/*   Updated: 2023/12/10 17:22:05 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHILO_H
-#define PHILO_H
+# define PHILO_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <pthread.h>
-#include <sys/time.h>
-#include <stdint.h>
-#include <unistd.h>
-#include <limits.h>
-#include <time.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <pthread.h>
+# include <sys/time.h>
+# include <stdint.h>
+# include <unistd.h>
+# include <limits.h>
+# include <time.h>
 
 # define GREEN	"\033[0;32m"
 # define RED	"\033[0;31m"
@@ -36,7 +36,7 @@
 
 typedef struct s_philo
 {
-	pthread_t		thread;				/*philo thread*/
+	pthread_t		thread;
 	int				philo_nbr;
 	pthread_mutex_t	*fork1;
 	pthread_mutex_t	*fork2;
@@ -55,10 +55,10 @@ typedef struct s_philo
 	int				flag;
 }				t_philo;
 
-typedef struct	s_data
+typedef struct s_data
 {
-	pthread_mutex_t *fork;
-	pthread_mutex_t lock;
+	pthread_mutex_t	*fork;
+	pthread_mutex_t	lock;
 	pthread_mutex_t	eat;
 	pthread_mutex_t	printer;
 	int				*fork_status;
@@ -66,7 +66,7 @@ typedef struct	s_data
 	uint64_t		t_die;
 	uint64_t		t_eat;
 	uint64_t		t_sleep;
-	int 			eat_count;
+	int				eat_count;
 	int				flag_of_death;
 	uint64_t		start_time;
 	t_philo			*fst_philo;

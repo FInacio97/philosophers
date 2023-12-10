@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 18:32:32 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/03 23:29:51 by fda-estr         ###   ########.fr       */
+/*   Updated: 2023/12/10 17:04:32 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,6 @@ void	print_philos(t_philo *first)
 	current = first;
 	while (current && --i)
 	{
-		// printf("==philosopher nº%d\ttime of death: %ld==\n", current->philo_nbr);
-		printf("fork 1: %p status[%d]\nfork 2: %p status[%d]\n\n", current->fork1, current->fork_status1, current->fork2, current->fork_status2);
 		if (!current->next_philo)
 			break ;
 		current = current->next_philo;

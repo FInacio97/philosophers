@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:42:56 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/03 21:49:09 by fda-estr         ###   ########.fr       */
+/*   Updated: 2023/12/10 17:06:50 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ int	fork_maker(t_data *data)
 		printf("Could not allocate memory: forks\n");
 		return (1);
 	}
-	printf("Number of philos: %d\n", data->nbr_of_philo);
 	data->fork_status = malloc(sizeof(int) * data->nbr_of_philo);
 	if (!data->fork_status)
 	{
@@ -44,8 +43,6 @@ int	fork_maker(t_data *data)
 
 int		parsing(t_data *data, int ac, char **av)
 {
-	printf("Nbr of philos: %d\n", data->nbr_of_philo);
-
 	data->nbr_of_philo = ft_atoi(av[1]);
 	if (data->nbr_of_philo < 1)
 		return (1);
@@ -54,11 +51,6 @@ int		parsing(t_data *data, int ac, char **av)
 	data->t_sleep = (uint64_t) ft_atoi(av[4]);
 	if (ac == 6)
 		data->eat_count = ft_atoi(av[5]);
-	printf("Nbr of philosophers: %d\n", data->nbr_of_philo);
-	printf("Time to die: %ld\n", data->t_die);
-	printf("Time to eat: %ld\n", data->t_eat);
-	printf("Time to sleep: %ld\n", data->t_sleep);
-	printf("Eat count: %d\n", data->eat_count);
 	if (data->nbr_of_philo > 1)
 		fork_maker(data);
 	return (0);

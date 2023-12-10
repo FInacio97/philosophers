@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 22:59:32 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/03 23:42:30 by fda-estr         ###   ########.fr       */
+/*   Updated: 2023/12/10 17:22:32 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	get_fork2(t_data *data, t_philo *philo)
 }
 
 int	get_fork(t_data *data, t_philo *philo)
-{ 
+{
 	while (1)
 	{
 		pthread_mutex_lock(philo->fork1);
@@ -44,7 +44,7 @@ int	get_fork(t_data *data, t_philo *philo)
 		}
 		pthread_mutex_unlock(philo->fork1);
 		if (check_pulse(data, philo) == 1)
-			break;
+			break ;
 	}
 	if (check_pulse(data, philo) == 0)
 		printer(data, philo, FORK);
