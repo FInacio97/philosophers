@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:43:01 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/10 17:22:05 by fda-estr         ###   ########.fr       */
+/*   Updated: 2023/12/25 20:28:48 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ typedef struct s_philo
 	uint64_t		t_sleep;
 	uint64_t		start_time;
 	uint64_t		time_of_death;
+	uint64_t		time_unthink;
 	uint64_t		last_ts;
 	int				max_eat;
 	int				eat_count;

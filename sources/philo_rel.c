@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 18:32:32 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/10 17:04:32 by fda-estr         ###   ########.fr       */
+/*   Updated: 2023/12/25 20:27:41 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ t_philo	*new_list(t_data *data, int philo_nbr)
 	node->last_ts = 0;
 	node->max_eat = 0;
 	node->eat_count = 0;
+	node->time_unthink = 0;
 	return (node);
 }
 
