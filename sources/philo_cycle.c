@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 22:45:03 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/03 23:30:10 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/07 14:43:11 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,8 @@ void	*philo_cycle(void *phil)
 			break ;
 		}
 		put_down_fork(data, philo);
-		// if (philo->flag == 1)
-		// 	break ;
 		if (to_sleep(data, philo) == 1)
 			break  ;
-		// if (philo->flag == 1)
-		// 	break ;
 		if (to_think(data, philo) == 1)
 			break ;
 	}
@@ -53,33 +49,31 @@ void	info_philo(t_data *data)
 	}
 }
 
-void	philo_birth_giver(t_data *data)
+void	philo_birth_giver(t_data *data, t_philo *nd)
 {
-	t_philo	*current;
-
-	current = data->fst_philo;
+	nd = data->fst_philo;
 	beggining_time_stamp(data);
 	info_philo(data);
-	while (current)
+	while (nd)
 	{
-		if (current->philo_nbr % 2 == 0)
+		if (nd->philo_nbr % 2 == 0)
 		{
-			current->philo_data = data;
-			if (pthread_create(&current->thread, NULL, philo_cycle, (void *)current) != 0)
-				printf("Error: fail to create thread nbr %d\n", current->philo_nbr);
+			nd->philo_data = data;
+			if (pthread_create(&nd->thread, NULL, philo_cycle, (void *)nd))
+				printf("fail to create thread nbr %d\n", nd->philo_nbr);
 		}
-		current = current->next_philo;
+		nd = nd->next_philo;
 	}
-	current = data->fst_philo;
-	while (current)
+	nd = data->fst_philo;
+	while (nd)
 	{
-		if (current->philo_nbr % 2 != 0)
+		if (nd->philo_nbr % 2 != 0)
 		{
-			current->philo_data = data;
-			if (pthread_create(&current->thread, NULL, philo_cycle, (void *)current) != 0)
-				printf("Error: fail to create thread nbr %d\n", current->philo_nbr);
+			nd->philo_data = data;
+			if (pthread_create(&nd->thread, NULL, philo_cycle, (void *)nd))
+				printf("fail to create thread nbr %d\n", nd->philo_nbr);
 		}
-		current = current->next_philo;
+		nd = nd->next_philo;
 	}
 }
 
@@ -93,19 +87,14 @@ void	philo_retire(t_data *data)
 	while (++i <= data->nbr_of_philo)
 	{
 		pthread_join(current->thread, NULL);
-		// printf("philo %d retired...\n", current->philo_nbr);
 		current = current->next_philo;
 	}
 }
 
-void	eat_check(t_data *data)
+void	eat_check(t_data *data, uint64_t check_time, uint64_t ts)
 {
-	uint64_t	ts;
-	uint64_t	check_time;
-
-	ts = time_stamp(data);
 	check_time = ts + 200;
-	while (1)
+	while (data->eat_count > 0)
 	{
 		pthread_mutex_lock(&data->eat);
 		if (data->eaters == data->nbr_of_philo)
@@ -126,10 +115,7 @@ void	eat_check(t_data *data)
 			pthread_mutex_unlock(&data->lock);
 			break ;
 		}
-		else
-		{
 			pthread_mutex_unlock(&data->lock);
 			check_time = ts + 200;
-		}
 	}
 }

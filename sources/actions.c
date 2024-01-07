@@ -6,30 +6,11 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 22:59:32 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/25 20:39:24 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/07 14:43:13 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-
-// void	get_fork2(t_data *data, t_philo *philo)
-// {
-// 	while (1)
-// 	{
-// 		pthread_mutex_lock(philo->fork2);
-// 		if (data->fork_status[philo->fork_status2] == 0)
-// 		{
-// 			data->fork_status[philo->fork_status2] = 1;
-// 			pthread_mutex_unlock(philo->fork2);
-// 			break ;
-// 		}
-// 		pthread_mutex_unlock(philo->fork2);
-// 		if (check_pulse(data, philo) == 1)
-// 			break ;
-// 	}
-// 	if (check_pulse(data, philo) == 0)
-// 		printer(data, philo, FORK);
-// }
 
 int	get_fork(t_data *data, t_philo *philo)
 {
@@ -54,7 +35,6 @@ int	get_fork(t_data *data, t_philo *philo)
 		printer(data, philo, FORK);
 	if (check_pulse(data, philo) == 0)
 		printer(data, philo, FORK);
-	// get_fork2(data, philo);
 	return (0);
 }
 
@@ -97,6 +77,7 @@ int		put_down_fork(t_data *data, t_philo *philo)
 	pthread_mutex_unlock(philo->fork1);
 	return (0);
 }
+
 int		to_sleep(t_data *data, t_philo *philo)
 {
 	uint64_t	end;

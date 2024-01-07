@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:42:58 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/03 20:12:40 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/07 14:51:49 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	initializer(t_data *data)
 {
-	data->eat_count = INT_MAX;
+	data->eat_count = -1;
 	data->nbr_of_philo = 0;
 	data->t_die = 0;
 	data->t_eat = 0;
@@ -95,6 +95,7 @@ uint64_t	time_stamp(t_data *data)
 		printf("Error: time stamp\n");
 	return((time.tv_sec * 1000) + (time.tv_usec / 1000) - data->start_time);
 }
+
 uint64_t	time_stamp_philo(t_philo *philo)
 {
 	struct timeval 	time;

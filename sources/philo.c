@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:42:53 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/25 20:37:17 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/07 14:38:15 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,21 +29,14 @@ int	main(int ac, char **av)
 	}
 	if (data.nbr_of_philo == 1)
 		one_philo(&data);
-	else
+	else if (data.eat_count != 0)
 	{
 		philo_generator(&data);
-		philo_birth_giver(&data);
-		eat_check(&data);
+		philo_birth_giver(&data, NULL);
+		eat_check(&data, 0, time_stamp(&data));
 		philo_retire(&data);
-		fork_destroyer(&data);
 		delete_list(&data);
-		free (data.fork_status);
 	}
+	free (data.fork_status);
+	fork_destroyer(&data);
 }
-
-
-/*
-	
-
-
-*/

@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:43:01 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/25 20:28:48 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/07 14:07:41 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,10 +89,10 @@ int			to_think(t_data *data, t_philo *philo);
 
 /*PHILO_CYCLES*/
 void		*philo_cycle(void *phil);
-void		philo_birth_giver(t_data *data);
+void		philo_birth_giver(t_data *data, t_philo *nd);
 void		philo_retire(t_data *data);
 void		info_philo(t_data *data);
-void		eat_check(t_data *data);
+void		eat_check(t_data *data, uint64_t check_time, uint64_t ts);
 
 /*UTILS*/
 void		initializer(t_data *data);

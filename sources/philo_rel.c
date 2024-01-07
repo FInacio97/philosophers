@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 18:32:32 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/25 20:27:41 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/07 14:42:28 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,16 +88,6 @@ void	print_philos(t_philo *first)
 	}
 }
 
-void	circulator(t_philo *first)///////////////////////
-{
-	t_philo *current;
-
-	current = first;
-	while (current->next_philo)
-		current = current->next_philo;
-	current->next_philo = first;
-}
-
 void	fork_shifter(t_data *data)
 {
 	t_philo 		*current;
@@ -150,7 +140,5 @@ void	philo_generator(t_data *data)
 		if (list_add_back(data, new_list(data, i)) == 1)
 			printf("Error: creating philos...\n");
 	}
-	// circulator(data->fst_philo);
 	fork_placer(data);
-	// print_philos(data->fst_philo);
 }
