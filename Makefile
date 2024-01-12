@@ -4,7 +4,7 @@ CINCLUDES = -I ./includes/
 
 
 
-CFLAGS = -Wall -Werror -Wextra -g -pthread #-fsanitize=thread
+CFLAGS = -Wall -Werror -Wextra -g -pthread -fsanitize=thread
 
 SRCS = ./sources/philo.c	./sources/parsing.c	./sources/utils.c\
 		./sources/philo_rel.c	./sources/philo_cycle.c ./sources/actions.c\
