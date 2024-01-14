@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:42:58 by fda-estr          #+#    #+#             */
-/*   Updated: 2024/01/07 14:51:49 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/13 01:09:48 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,35 +52,9 @@ void	fork_destroyer(t_data *data)
 	pthread_mutex_destroy(&data->printer);
 }
 
-int	ft_atoi(char *str)
-{
-	int	i;
-	int	sign;
-	int	res;
-
-	i = 0;
-	sign = 1;
-	res = 0;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9' && str[i] != 0)
-	{
-		res *= 10;
-		res += str[i] - 48;
-		i++;
-	}
-	return (res * sign);
-}
-
 void	beggining_time_stamp(t_data *data)
 {
-	struct timeval time;
+	struct timeval	time;
 
 	if (gettimeofday(&time, NULL) < 0)
 		printf("Error: time stamp\n");
@@ -89,27 +63,20 @@ void	beggining_time_stamp(t_data *data)
 
 uint64_t	time_stamp(t_data *data)
 {
-	struct timeval time;
+	struct timeval	time;
 
 	if (gettimeofday(&time, NULL) < 0)
 		printf("Error: time stamp\n");
-	return((time.tv_sec * 1000) + (time.tv_usec / 1000) - data->start_time);
+	return ((time.tv_sec * 1000) + (time.tv_usec / 1000) - data->start_time);
 }
 
 uint64_t	time_stamp_philo(t_philo *philo)
 {
-	struct timeval 	time;
+	struct timeval	time;
 	uint64_t		res;
 
 	if (gettimeofday(&time, NULL) < 0)
 		printf("Error: time stamp\n");
 	res = (time.tv_sec * 1000) + (time.tv_usec / 1000) - philo->start_time;
-	return(res);
-}
-
-void	one_philo(t_data *data)
-{
-	printf (CYAN"0\t" GREEN"1\t" YELLOW"has taken a fork\n" RESET);
-	usleep(data->t_die * 1000);
-	printf (CYAN"%lu\t" GREEN"1\t" RED"died\n" RESET, data->t_die);
+	return (res);
 }

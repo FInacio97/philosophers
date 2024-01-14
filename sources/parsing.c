@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:42:56 by fda-estr          #+#    #+#             */
-/*   Updated: 2024/01/07 14:25:55 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/08 00:51:02 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	fork_maker(t_data *data)
 	return (0);
 }
 
-int		parsing(t_data *data, int ac, char **av)
+int	parsing(t_data *data, int ac, char **av)
 {
 	data->nbr_of_philo = ft_atoi(av[1]);
 	if (data->nbr_of_philo < 1)

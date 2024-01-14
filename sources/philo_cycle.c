@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 22:45:03 by fda-estr          #+#    #+#             */
-/*   Updated: 2024/01/07 14:43:11 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/08 00:50:32 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*philo_cycle(void *phil)
 {
-	t_data *data;
-	t_philo *philo;
+	t_data	*data;
+	t_philo	*philo;
 
 	philo = (t_philo *) phil;
 	data = philo->philo_data;
@@ -30,7 +30,7 @@ void	*philo_cycle(void *phil)
 		}
 		put_down_fork(data, philo);
 		if (to_sleep(data, philo) == 1)
-			break  ;
+			break ;
 		if (to_think(data, philo) == 1)
 			break ;
 	}
@@ -39,7 +39,7 @@ void	*philo_cycle(void *phil)
 
 void	info_philo(t_data *data)
 {
-	t_philo *current;
+	t_philo	*current;
 
 	current = data->fst_philo;
 	while (current)
@@ -103,19 +103,19 @@ void	eat_check(t_data *data, uint64_t check_time, uint64_t ts)
 			data->flag_of_death = 1;
 			pthread_mutex_unlock(&data->lock);
 			pthread_mutex_unlock(&data->eat);
-			break ;	
+			break ;
 		}
 		pthread_mutex_unlock(&data->eat);
 		ts = time_stamp(data);
 		if (ts < check_time)
 			continue ;
-		pthread_mutex_lock(&data->lock);	
+		pthread_mutex_lock(&data->lock);
 		if (chech_status(data, NULL) == 1)
 		{
 			pthread_mutex_unlock(&data->lock);
 			break ;
 		}
-			pthread_mutex_unlock(&data->lock);
-			check_time = ts + 200;
+		pthread_mutex_unlock(&data->lock);
+		check_time = ts + 200;
 	}
 }

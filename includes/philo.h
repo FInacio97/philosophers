@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:43:01 by fda-estr          #+#    #+#             */
-/*   Updated: 2024/01/07 14:07:41 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/13 01:09:28 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,25 +97,25 @@ void		eat_check(t_data *data, uint64_t check_time, uint64_t ts);
 /*UTILS*/
 void		initializer(t_data *data);
 void		fork_destroyer(t_data *data);
-int			ft_atoi(char *s);
 void		beggining_time_stamp(t_data *data);
 uint64_t	time_stamp(t_data *data);
 uint64_t	time_stamp_philo(t_philo *philo);
-void		undertaker(t_data *data);
-int			finish_check(t_data *data);
-void		one_philo(t_data *data);
 
 /*PHILO RELATIVES*/
-void		delete_list(t_data *data);
-t_philo		*new_list(t_data *data, int philo_nbr);
 void		print_philos(t_philo *first);
-int			list_add_back(t_data *data, t_philo *node);
 void		fork_shifter(t_data *data);
 void		philo_generator(t_data *data);
 
-/*UTILS 2*/
+/* UTILS 2*/
 int			chech_status(t_data *data, t_philo *philo);
 int			check_pulse(t_data *data, t_philo *philo);
 uint64_t	printer(t_data *data, t_philo *philo, char *state);
+void		one_philo(t_data *data);
+int			ft_atoi(char *s);
+
+/* LISTS */
+void		delete_list(t_data *data);
+t_philo		*new_list(t_data *data, int philo_nbr);
+int			list_add_back(t_data *data, t_philo *node);
 
 #endif

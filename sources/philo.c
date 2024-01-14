@@ -6,15 +6,15 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:42:53 by fda-estr          #+#    #+#             */
-/*   Updated: 2024/01/07 14:38:15 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/08 00:52:35 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	main(int ac, char **av) 
+int	main(int ac, char **av)
 {
-	t_data data;
+	t_data	data;
 
 	if (ac != 5 && ac != 6)
 	{

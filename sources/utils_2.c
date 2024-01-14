@@ -6,7 +6,7 @@
 /*   By: fda-estr <fda-estr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 18:20:50 by fda-estr          #+#    #+#             */
-/*   Updated: 2023/12/25 20:09:19 by fda-estr         ###   ########.fr       */
+/*   Updated: 2024/01/13 01:06:59 by fda-estr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,37 @@ uint64_t	printer(t_data *data, t_philo *philo, char *state)
 	pthread_mutex_unlock(&data->printer);
 	pthread_mutex_unlock(&data->lock);
 	return (ts);
+}
+
+void	one_philo(t_data *data)
+{
+	printf (CYAN"0\t" GREEN"1\t" YELLOW"has taken a fork\n" RESET);
+	usleep(data->t_die * 1000);
+	printf (CYAN"%lu\t" GREEN"1\t" RED"died\n" RESET, data->t_die);
+}
+
+int	ft_atoi(char *str)
+{
+	int	i;
+	int	sign;
+	int	res;
+
+	i = 0;
+	sign = 1;
+	res = 0;
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9' && str[i] != 0)
+	{
+		res *= 10;
+		res += str[i] - 48;
+		i++;
+	}
+	return (res * sign);
 }
